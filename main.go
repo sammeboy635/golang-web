@@ -8,16 +8,18 @@ import (
 type ToDo struct {
 	Name     string
 	College  string
-	Keywords []string
+	Keywords map[string]string
 }
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	todos := ToDo{Name: "test", College: "testeset", Keywords: []string{"here", "here2"}}
+	todos := ToDo{Name: "test", College: "testeset", Keywords: map[string]string{"Gitlab": "Gitlab", "Other": "Other"}}
 
 	t, _ := template.ParseFiles("static/index.html",
 		"static/html/nav.html",
 		"static/html/footer.html",
-		"static/html/card.html")
+		"static/html/card.html",
+		//"static/html/cardp.html"
+	)
 	err := t.Execute(w, todos)
 	if err != nil {
 		panic(err)

@@ -1,0 +1,14 @@
+<!-- Pass data in to the template
+{{range $k, $v := .Keywords}}Key: {{$k}}, Value: {{$v}}
+    {{template "cardp" $v}}
+{{ end }}-->
+{{ define "cardp"}}
+    <div class="card p-3 m-3" style="width: 18rem;">
+        <img class="card-img-top" src="static/image/gitlab.png" alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title d-flex justify-content-center">{{.}}</h5>
+        <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary d-flex justify-content-center">{{.}}</a>
+        </div>
+    </div>
+{{ end }}

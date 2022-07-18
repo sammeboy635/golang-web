@@ -1,12 +1,19 @@
+<!-- Pass in a map[string]string to populate values 
+    use {{template "card" .}} to pass environment in-->
 {{ define "card"}}
-
-<div class="card p-3 m-3" style="width: 18rem;">
-    <img class="card-img-top" src="static/image/gitlab.png" alt="Card image cap">
-    <div class="card-body">
-    <h5 class="card-title d-flex justify-content-center">Card title</h5>
-    <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary d-flex justify-content-center">Go somewhere</a>
+    <div class="flex flex-wrap">
+        {{range $k, $v := .Keywords}}
+        <div class="">
+            <div class="card p-3 m-3" style="width: 18rem;">
+                <img class="card-img-top" src="static/image/gitlab.png" alt="Card image cap">
+                <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center">{{$k}}</h5>
+                <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary d-flex justify-content-center">{{$v}}</a>
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 
+  {{ end }}
 {{ end }}

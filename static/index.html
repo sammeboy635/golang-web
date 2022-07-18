@@ -12,14 +12,10 @@
     <title>Hello, world! </title>
   </head>
 
-  {{template "nav" .}}
+  {{template "nav" }}
   <body>
-  {{.Name}} {{.College}}
-  {{range .Keywords}}
-      {{template "card" .}}
-     {{.}}
-  {{end}}
-  {{template "card" .}}
+    {{template "card" .}}
+
     <div id="card-placeholder"> </div>
         
     <!-- Optional JavaScript -->
