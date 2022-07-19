@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)http://localhost:3000/new# -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    
+	  <script src="./buget_files/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="./buget_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="./buget_files/output.css" rel="stylesheet">
+    <title>Hello, world! </title>
+  </head>
+
+  
+
+<body style=""><nav class="relative w-full flex flex-wrap items-center justify-between py-3 bg-gray-900 text-gray-200 shadow-lg navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+    <button class="navbar-toggler text-gray-200 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="w-6" role="img" viewBox="0 0 448 512">
+        <path fill="bg-white" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+      </svg>
+    </button>
+    <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent1">
+      <a class="text-xl text-white pr-2 font-semibold" href="http://localhost:3000/new#">Navbar</a>
+      
+      <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
+        <li class="nav-item p-2">
+          <a class="nav-link text-white" href="http://localhost:3000/new#">Dashboard</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0" href="http://localhost:3000/new#">Team</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link text-white opacity-60 hover:opacity-80 focus:opacity-80 p-0" href="http://localhost:3000/new#">Projects</a>
+        </li>
+      </ul>
+      
+    </div>
+    
+
+    
+    <div class="flex items-center relative">
+      
+      <a class="text-white opacity-60 hover:opacity-80 focus:opacity-80 mr-4" href="http://localhost:3000/new#">
+        <svg class="" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+          <path fill="bg-white" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z"></path>
+        </svg>
+      </a>
+      <div class="dropdown relative">
+        <a class="text-white opacity-60 hover:opacity-80 focus:opacity-80 mr-4 dropdown-toggle hidden-arrow flex items-center" href="http://localhost:3000/new#" id="dropdownMenuButton1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell" class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path fill="currentColor" d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"></path>
+          </svg>
+          <span class="text-white bg-red-700 absolute rounded-full text-xs -mt-2.5 ml-2 py-0 px-1.5">1</span>
+        </a>
+        <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton1">
+          <li>
+            <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="http://localhost:3000/new#">Action</a>
+          </li>
+          <li>
+            <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="http://localhost:3000/new#">Another action</a>
+          </li>
+          <li>
+            <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="http://localhost:3000/new#">Something else here</a>
+          </li>
+        </ul>
+      </div>
+      <div class="dropdown relative">
+        <a class="dropdown-toggle flex items-center hidden-arrow" href="http://localhost:3000/new#" id="dropdownMenuButton2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="./buget_files/2.jpg" class="rounded-full" style="height: 25px; width: 25px" alt="" loading="lazy">
+        </a>
+        <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none left-auto right-0" aria-labelledby="dropdownMenuButton2">
+          <li>
+            <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="http://localhost:3000/new#">Action</a>
+          </li>
+          <li>
+            <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="http://localhost:3000/new#">Another action</a>
+          </li>
+          <li>
+            <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100" href="http://localhost:3000/new#">Something else here</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+  </div>
+</nav>
+
+
+  
+    
+<div class="p-3">
+<div class="flex font-sans shadow shadow-black rounded-lg">
+    <div class="flex-none w-48 relative">
+      <img src="./buget_files/gitlab.png" alt="" class="absolute inset-0 w-full h-full object-cover" loading="lazy">
+    </div>
+    <form class="flex-auto p-6">
+      <div class="flex flex-wrap">
+        <h1 class="flex-auto text-lg font-semibold text-slate-900">
+          Classic Utility Jacket
+        </h1>
+        <div class="text-lg font-semibold text-slate-500">
+          $110.00
+        </div>
+        <div class="w-full flex-none text-sm font-medium text-slate-700 mt-2">
+          In stock
+        </div>
+      </div>
+      <div class="flex items-baseline mt-4 mb-6 pb-6 border-b border-slate-200">
+        <div class="space-x-2 flex text-sm">
+          <label>
+            <input class="sr-only peer" name="size" type="radio" value="xs" checked="">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+              XS
+            </div>
+          </label>
+          <label>
+            <input class="sr-only peer" name="size" type="radio" value="s">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+              S
+            </div>
+          </label>
+          <label>
+            <input class="sr-only peer" name="size" type="radio" value="m">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+              M
+            </div>
+          </label>
+          <label>
+            <input class="sr-only peer" name="size" type="radio" value="l">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+              L
+            </div>
+          </label>
+          <label>
+            <input class="sr-only peer" name="size" type="radio" value="xl">
+            <div class="w-9 h-9 rounded-lg flex items-center justify-center text-slate-700 peer-checked:font-semibold peer-checked:bg-slate-900 peer-checked:text-white">
+              XL
+            </div>
+          </label>
+        </div>
+      </div>
+      <div class="flex space-x-4 mb-6 text-sm font-medium">
+        <div class="flex-auto flex space-x-4">
+          <button class="h-10 px-6 font-semibold rounded-md bg-black text-white" type="submit">
+            Buy now
+          </button>
+          <button class="h-10 px-6 font-semibold rounded-md border border-slate-200 text-slate-900" type="button">
+            Add to bag
+          </button>
+        </div>
+        <button class="flex-none flex items-center justify-center w-9 h-9 rounded-md text-slate-300 border border-slate-200" type="button" aria-label="Like">
+          <svg width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"></path>
+          </svg>
+        </button>
+      </div>
+      <p class="text-sm text-slate-700">
+        Free shipping on all continental US orders.
+      </p>
+    </form>
+  </div>
+</div>
+
+
+
+
+    
+<div class="p-3 rounded-lg">
+    <div class=" shadow shadow-black">
+        <section>
+            <header class="bg-white space-y-4 p-4 sm:px-8 sm:py-6 lg:p-4 xl:px-8 xl:py-6">
+                <div class="flex items-center justify-between">
+                    <h2 class="font-semibold text-slate-900">Projects</h2>
+                    <a href="http://localhost:3000/new" class="hover:bg-blue-400 group flex items-center rounded-md bg-blue-500 text-white text-sm font-medium pl-2 pr-3 py-2 shadow-sm">
+                        <svg width="20" height="20" fill="currentColor" class="mr-2" aria-hidden="true">
+                            <path d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z"></path>
+                        </svg>
+                        New
+                    </a>
+                </div>
+                <form class="group relative">
+                    <svg width="20" height="20" fill="currentColor" class="absolute left-3 top-1/2 -mt-2.5 text-slate-400 pointer-events-none group-focus-within:text-blue-500" aria-hidden="true">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"></path>
+                    </svg>
+                    <input class="focus:ring-2 shadow shadow-black focus:outline-none appearance-none w-full text-sm leading-6 text-slate-900 placeholder-slate-400 rounded-md py-2 pl-10 ring-1 ring-slate-200" type="text" aria-label="Filter projects" placeholder="Filter projects...">
+                </form>
+            </header>
+            <ul class=" p-4 sm:px-8 sm:pt-6 sm:pb-8 lg:p-4 xl:px-8 xl:pt-6 xl:pb-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2 gap-4 text-sm leading-6  dark:ring-1 dark:ring-white/5">
+                <li class="group shadow-md cursor-pointer rounded-md p-3 bg-white ring-1 ring-slate-200 hover:bg-blue-500 hover:ring-blue-500 hover:shadow-md dark:bg-slate-700 dark:ring-0 dark:highlight-white/10 dark:hover:bg-blue-500">
+                    <dl class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center">
+                        <div>
+                            <dt class="sr-only">Title</dt>
+                            <dd class="font-semibold text-slate-900 group-hover:text-blue-400 ">API
+                                Integration</dd>
+                        </div>
+                        <div>
+                            <dt class="sr-only">Category</dt>
+                            <dd class="group-hover:text-blue-200">Engineering</dd>
+                        </div>
+                        <div class="col-start-2 row-start-1 row-end-3 sm:mt-4 lg:mt-0 xl:mt-4">
+                        </div>
+                    </dl>
+                </li>
+                <li class="group shadow-md cursor-pointer rounded-md p-3 bg-white ring-1 ring-slate-200 hover:bg-blue-500 hover:ring-blue-500 hover:shadow-md dark:bg-slate-700 dark:ring-0 dark:highlight-white/10 dark:hover:bg-blue-400">
+                    <dl class="grid sm:block lg:grid xl:block grid-cols-2 grid-rows-2 items-center">
+                        <div>
+                            <dt class="sr-only">Title</dt>
+                            <dd class="font-semibold text-slate-900 group-hover:to-blue-400">New
+                                Benefits Plan</dd>
+                        </div>
+                        <div>
+                            <dt class="sr-only">Category</dt>
+                            <dd class="group-hover:text-blue-200">Human Resources</dd>
+                        </div>
+                        <div class="col-start-2 row-start-1 row-end-3 sm:mt-4 lg:mt-0 xl:mt-4">
+                            <dt class="sr-only">Users</dt>
+                            
+                        </div>
+                    </dl>
+                </li>
+                
+                <li class="flex">
+                    <div class="group w-full flex flex-col items-center justify-center rounded-md border-2 border-dashed border-slate-300 text-sm leading-6 text-slate-900 font-medium py-3 cursor-pointer hover:border-blue-400 hover:border-solid hover:text-blue-500 dark:border-slate-700 dark:hover:border-blue-500 dark:hover:bg-transparent dark:hover:text-blue-500">
+                        <svg width="20" height="20" fill="currentColor" class="mb-1 text-slate-900 group-hover:text-blue-500">
+                            <path d="M10 5a1 1 0 0 1 1 1v3h3a1 1 0 1 1 0 2h-3v3a1 1 0 1 1-2 0v-3H6a1 1 0 1 1 0-2h3V6a1 1 0 0 1 1-1Z">
+                            </path>
+                        </svg>New project</div>
+                </li>
+            </ul>
+        </section>
+    </div>
+</div>
+
+
+    
+    
+    
+    <script src="./buget_files/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="./buget_files/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
+
+ 
+
+
+<footer class="text-center text-lg-start bg-light text-muted">
+  
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    
+
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    
+
+    
+    <div>
+      <a href="http://localhost:3000/new" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="http://localhost:3000/new" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="http://localhost:3000/new" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="http://localhost:3000/new" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="http://localhost:3000/new" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="http://localhost:3000/new" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    
+  </section>
+  
+
+  
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      
+      <div class="row mt-3">
+        
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        
+
+        
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="http://localhost:3000/new#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="http://localhost:3000/new#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="http://localhost:3000/new#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="http://localhost:3000/new#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        
+
+        
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="http://localhost:3000/new#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="http://localhost:3000/new#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="http://localhost:3000/new#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="http://localhost:3000/new#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        
+
+        
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+  
+
+  
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  
+</footer>
+
+
+</body></html>

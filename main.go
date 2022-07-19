@@ -14,13 +14,17 @@ type ToDo struct {
 func indexHandler(w http.ResponseWriter, r *http.Request) {
 	todos := ToDo{Name: "test", College: "testeset", Keywords: map[string]string{"Gitlab": "Gitlab", "Other": "Other"}}
 
-	t, _ := template.ParseFiles("static/index.html",
-		"static/html/nav.html",
-		"static/html/footer.html",
-		"static/html/card.html",
-		//"static/html/cardp.html"
+	t, err := template.ParseFiles("static/index.htm",
+		"static/html/nav.htm",
+		"static/html/footer.htm",
+		"static/html/card.htm",
+		"static/html/simplecard.htm",
+		"static/html/new.htm",
 	)
-	err := t.Execute(w, todos)
+	if err != nil {
+		panic(err)
+	}
+	err = t.Execute(w, todos)
 	if err != nil {
 		panic(err)
 	}
@@ -28,10 +32,10 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 func homeHandler(w http.ResponseWriter, r *http.Request) {
 	todos := ToDo{Name: "test", College: "testeset"}
 
-	t, _ := template.ParseFiles("static/home.html",
-		"static/html/nav.html",
-		"static/html/footer.html",
-		"static/html/card.html")
+	t, _ := template.ParseFiles("static/home.htm",
+		"static/html/nav.htm",
+		"static/html/footer.htm",
+		"static/html/card.htm")
 	err := t.Execute(w, todos)
 	if err != nil {
 		panic(err)

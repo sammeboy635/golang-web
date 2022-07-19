@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* npx tailwindcss -i ./static/css/input.css -o ./static/css/output.css --watch */
+.custom{
+    @apply container;
+    @apply border;
+    @apply shadow;
+    @apply shadow-red-600;
+    @apply rounded-xl;
+    @apply w-64;
+    @apply text-center;
+}
