@@ -41,6 +41,25 @@ func homeHandler(w http.ResponseWriter, r *http.Request) {
 		panic(err)
 	}
 }
+func loginHandler(w http.ResponseWriter, r *http.Request) {
+	t, _ := template.ParseFiles("static/login.htm",
+		"static/html/nav.htm",
+		"static/html/footer.htm",
+		"static/html/card.htm")
+	err := t.Execute(w, nil)
+	if err != nil {
+		panic(err)
+	}
+}
+func testHandler(w http.ResponseWriter, r *http.Request) {
+	t, _ := template.ParseFiles("static/test.htm",
+		"static/html/nav.htm",
+		"static/html/footer.htm")
+	err := t.Execute(w, nil)
+	if err != nil {
+		panic(err)
+	}
+}
 func main() {
 
 	fs := http.FileServer(http.Dir("static"))
@@ -48,6 +67,8 @@ func main() {
 
 	http.HandleFunc("/", indexHandler)
 	http.HandleFunc("/home", homeHandler)
+	http.HandleFunc("/login", loginHandler)
+	http.HandleFunc("/test", testHandler)
 
 	http.ListenAndServe(":3000", nil)
 }
